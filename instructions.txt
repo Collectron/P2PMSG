@@ -1,0 +1,17 @@
+This is our implementation for a Auto-Synchronized Peer2Peer Messenger
+
+First run the Authorization server, using:
+>> python3 main_server.py
+
+You can create a new network by using:
+>> python3 node_server.py <port> <nodename> nope
+
+example: python3 node_server.py 8080 node0 nope
+
+You can add new nodes to the network using:
+>> python3 node_server.py <port> <nodename> <existing_node_IP:existing_node_PORT>
+
+example python3 node_server.py 8081 node1 localhost:8080
+
+You can open a new client by using:
+>> python3 client.py
